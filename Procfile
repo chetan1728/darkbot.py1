@@ -1,1 +1,1 @@
-worker: python ticketbot1.py 
+worker: python Ticketbot1.py 
