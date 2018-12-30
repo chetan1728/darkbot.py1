@@ -10,7 +10,7 @@ bot.remove_command('help')
 @bot.event
 async def on_ready():
   print("Bot on")
-  await bot.change_presence(game=discord.Game(name="$ticket new", url="https://twitch.tv/~", type=1))
+  await bot.change_presence(game=discord.Game(name="$new", url="https://twitch.tv/~", type=1))
 
 @bot.command(pass_context=False)
 async def help():
@@ -20,7 +20,7 @@ async def help():
 @bot.group(pass_context=True)
 async def ticket(ctx):
     if ctx.invoked_subcommand is None:
-        await bot.say("Did you mean ``$ticket new``?")
+        await bot.say("Did you mean ``$new``?")
 
 @ticket.command(pass_context=True)
 async def new(ctx):
