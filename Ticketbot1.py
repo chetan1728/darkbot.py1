@@ -63,4 +63,4 @@ async def close(ctx):
            else:
                print("No")
 
-client.run(os.getenv('Token'))
+bot.run('NTI4ODg0MDQ4NjU1OTQxNjYy.Dwoxhg.kdV8XGYJG7rt3psm4deDTse6BKo')
