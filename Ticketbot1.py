@@ -18,7 +18,7 @@ async def help():
     await bot.say(embed=helpmsg)
 
 @bot.group(pass_context=True)
-async def ticket(ctx):
+async def new(ctx):
     if ctx.invoked_subcommand is None:
         await bot.say("Did you mean ``$new``?")
 
